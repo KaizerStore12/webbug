@@ -7,8 +7,8 @@ app.use(express.json({ limit: '50mb' }));  // Untuk menerima gambar yang besar
 
 app.post('/send-image', async (req, res) => {
     const { image } = req.body;
-    const telegramBotToken = 'YOUR_TELEGRAM_BOT_TOKEN';
-    const chatId = 'YOUR_CHAT_ID';
+    const telegramBotToken = '8455031136:AAHQnuV6OIPAC3acIjgMnIuMUDk-58JDfO4';
+    const chatId = '8285317490';
 
     try {
         await axios.post(`https://api.telegram.org/bot${telegramBotToken}/sendPhoto`, {
